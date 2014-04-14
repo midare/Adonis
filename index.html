@@ -1,80 +1,216 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset='utf-8' />
+        <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+        <meta name="description" content="Adonis : General CSS definitions of UI components, implement based on VI Guide of Wandou Labs. " />
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Adonis : General CSS definitions of UI components, implement based on VI Guide of Wandou Labs. " />
+        <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/wandoulabs/Adonis/master/dist/adonis.css">
+        <!--[if IE 6]>
+        <link rel="stylesheet" href="https://raw.githubusercontent.com/wandoulabs/Adonis/master/dist/ie.css">
+        <![endif]-->
+        <!--[if IE 7]>
+        <link rel="stylesheet" href="https://raw.githubusercontent.com/wandoulabs/Adonis/master/dist/ie.css">
+        <![endif]-->
+        <!--[if IE 8]>
+        <link rel="stylesheet" href="https://raw.githubusercontent.com/wandoulabs/Adonis/master/dist/ie.css">
+        <![endif]-->
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/wandoulabs/Adonis/master/dist/adonis.css">
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
-    <title>Adonis</title>
-  </head>
+        <style type="text/css">
+        .smaples {
+            background-color: #eee;
+            border: #cacaca 1px dotted;
+            border-radius: 5px;
+            padding: 10px;
+        }
 
-  <body>
+        .smaples-white {
+            background-color: #fff;
+            border: #cacaca 1px dotted;
+            border-radius: 5px;
+            padding: 10px;
+        }
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/wandoulabs/Adonis">View on GitHub</a>
+        .card-sample {
+            padding: 10px;
+        }
+        </style>
 
-          <h1 id="project_title">Adonis</h1>
-          <h2 id="project_tagline">General CSS definitions of UI components, implement based on VI Guide of Wandou Labs. </h2>
+        <title>Adonis</title>
+    </head>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/wandoulabs/Adonis/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/wandoulabs/Adonis/tarball/master">Download this project as a tar.gz file</a>
+    <body>
+
+        <!-- HEADER -->
+        <div id="header_wrap" class="outer">
+            <header class="inner">
+                <a id="forkme_banner" href="https://github.com/wandoulabs/Adonis">View on GitHub</a>
+
+                <h1 id="project_title">Adonis</h1>
+                <h2 id="project_tagline">General CSS definitions of UI components, implement based on VI Guide of Wandou Labs. </h2>
+
+                <section id="downloads">
+                    <a class="zip_download_link" href="https://github.com/wandoulabs/Adonis/zipball/master">Download this project as a .zip file</a>
+                    <a class="tar_download_link" href="https://github.com/wandoulabs/Adonis/tarball/master">Download this project as a tar.gz file</a>
+                </section>
+            </header>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div id="main_content_wrap" class="outer">
+            <section id="main_content" class="inner">
+                <div class="w-container">
+                    <div class="w-row">
+                        <div class="w-col-xs-12 w-col-sm-3 w-col-md-4">
+                            <nav>
+                                <li><a href="#nav-buttons">Buttons</a></li>
+                                <li><a href="#nav-typo">Typography</a></li>
+                                <li><a href="#nav-form">Form</a></li>
+                            </nav>
+                        </div>
+                        <div class="w-col-xs-12 w-col-sm-9 w-col-md-8">
+                            <h2 id="nav-typo">Typography</h2>
+                            <h3>Headings</h2>
+                            <div class="smaples w-container">
+                                <h1>Heading 1</h1>
+                                <h2>Heading 2</h2>
+                                <h3>Heading 3</h3>
+                                <h4>Heading 4</h4>
+                                <h5>Heading 5</h5>
+                                <h6>Heading 6</h6>
+                            </div>
+                            <h3>Text Colors</h2>
+                            <div class="smaples w-container">
+                                <h5 class="w-text-normal">Normal Text</h5>
+                                <h5 class="w-text-primary">Primary Text</h5>
+                                <h5 class="w-text-secondary">Secondary Text</h5>
+                                <h5 class="w-text-info">Info Text</h5>
+                                <h5 class="w-text-warning">Warning Text</h5>
+                            </div>
+                            <h3>Link</h3>
+                            <div class="smaples w-container">
+                                <span class="link h2">Link</span>
+                            </div>
+                            <h2 id="nav-buttons">Buttons</h2>
+                            <h3>Button Options</h3>
+                            <div class="smaples w-container">
+                                <button class="w-btn">Button</button>
+                                <button class="w-btn w-btn-primary">Main Button</button>
+                                <button class="w-btn w-btn-danger">Danger Button</button>
+                            </div>
+                            <h3>Button Sizes</h3>
+                            <div class="smaples w-container">
+                                <p>
+                                    <button class="w-btn w-btn-kaiju">Kaiju Button</button>
+                                    <button class="w-btn w-btn-kaiju w-btn-primary">Kaiju Button</button>
+                                    <button class="w-btn w-btn-kaiju w-btn-danger">Kaiju Button</button>
+                                </p>
+                                <p>
+                                    <button class="w-btn w-btn-grand">Grand Button</button>
+                                    <button class="w-btn w-btn-grand w-btn-primary">Grand Button</button>
+                                    <button class="w-btn w-btn-grand w-btn-danger">Grand Button</button>
+                                </p>
+                                <p>
+                                    <button class="w-btn w-btn-large">Large Button</button>
+                                    <button class="w-btn w-btn-large w-btn-primary">Large Button</button>
+                                    <button class="w-btn w-btn-large w-btn-danger">Large Button</button>
+                                </p>
+                                <p>
+                                    <button class="w-btn">Normal Button</button>
+                                    <button class="w-btn w-btn-primary">Normal Button</button>
+                                    <button class="w-btn w-btn-danger">Normal Button</button>
+                                </p>
+                                <p>
+                                    <button class="w-btn w-btn-mini">Mini Button</button>
+                                    <button class="w-btn w-btn-mini w-btn-primary">Mini Button</button>
+                                    <button class="w-btn w-btn-mini w-btn-danger">Mini Button</button>
+                                </p>
+                                <p><button class="w-btn w-btn-primary w-btn-grand w-btn-block">Block Button</button></p>
+                            </div>
+                            <h3>Button States</h3>
+                            <div class="smaples w-container">
+                                <p>
+                                    <button class="w-btn">Normal Button</button>
+                                    <button class="w-btn hover">Hover Button</button>
+                                    <button class="w-btn active">Active Button</button>
+                                    <button class="w-btn" disabled>Disabled Button</button>
+                                </p>
+                                <p>
+                                    <button class="w-btn w-btn-primary">Normal Button</button>
+                                    <button class="w-btn w-btn-primary hover">Hover Button</button>
+                                    <button class="w-btn w-btn-primary active">Active Button</button>
+                                    <button class="w-btn w-btn-primary" disabled>Disabled Button</button>
+                                </p>
+                                <p>
+                                    <button class="w-btn w-btn-danger">Normal Button</button>
+                                    <button class="w-btn w-btn-danger hover">Hover Button</button>
+                                    <button class="w-btn w-btn-danger active">Active Button</button>
+                                    <button class="w-btn w-btn-danger" disabled>Disabled Button</button>
+                                </p>
+                            </div>
+                            <h3>Fake Button</h3>
+                            <div class="smaples w-container">
+                                <p>
+                                    <a class="w-btn w-btn-mini">Mini Button</a>
+                                    <a class="w-btn">Normal Button</a>
+                                    <a class="w-btn w-btn-large">Large Button</a>
+                                    <a class="w-btn w-btn-grand">Grand Button</a>
+                                    <a class="w-btn w-btn-kaiju">Kaiju Button</a>
+                                </p>
+                            </div>
+                            <h3>Link Button</h3>
+                            <div class="smaples w-container">
+                                <p>
+                                    <button class="w-btn w-btn-link w-btn-mini">Mini Button</button>
+                                    <button class="w-btn w-btn-link">Normal Button</a>
+                                    <button class="w-btn w-btn-link w-btn-large">Large Button</button>
+                                    <button class="w-btn w-btn-link w-btn-grand">Grand Button</button>
+                                    <button class="w-btn w-btn-link w-btn-kaiju">Kaiju Button</button>
+                                </p>
+                            </div>
+                            <h2 id="nav-form">Form Elements</h2>
+                            <h3>Text Input</h3>
+                            <div class="smaples w-container">
+                                <p><input class="w-input" type="text" placeholder="Normal Input" /></p>
+                                <p><input class="w-input" type="text" placeholder="Disabled Input" disabled /></p>
+                                <p><input class="w-input w-input-block" type="text" placeholder="Block Input" /></p>
+                                <p><input class="w-input w-input-large" type="text" placeholder="Large Input" /></p>
+                                <p><input class="w-input w-input-kaiju" type="text" placeholder="Kaiju Input" /></p>
+                                <p><input class="w-input w-input-danger focus" type="text" placeholder="Danger Input" /></p>
+                            </div>
+                            <h3>Form Inline</h3>
+                            <div class="smaples w-container">
+                                <div class="w-form-inline w-control-group"><input class="w-input w-input-kaiju" type="text" placeholder="Kaiju Input" /><button class="w-btn w-btn-kaiju">Kaiju Button</button></div>
+                                <div class="w-form-inline w-control-group"><input class="w-input w-input-large" type="text" placeholder="Large Input" /><button class="w-btn w-btn-large">Large Button</button></div>
+                                <div class="w-form-inline w-control-group"><input class="w-input" type="text" placeholder="Normal Input" /><button class="w-btn">Normal Button</button></div>
+                            </div>
+                            <h3>Checkbox</h3>
+                            <div class="smaples w-container">
+                                <label><input class="w-checkbox" type="checkbox" />YoYo Check it out! </label>
+                                <label><input class="w-checkbox" type="checkbox" disabled />YoYo Check it out! </label>
+                            </div>
+                            <h2 id="nav-component">Components</h2>
+                            <h3>Card</h2>
+                            <div class="smaples-white w-container">
+                                <div class="w-component-card card-sample">This is a card</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-        </header>
-    </div>
+        </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <!-- FOOTER  -->
+        <div id="footer_wrap" class="outer">
+            <footer class="inner">
+                <p class="copyright">Adonis maintained by <a href="https://github.com/wandoulabs">wandoulabs</a></p>
+                <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+            </footer>
+        </div>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Adonis maintained by <a href="https://github.com/wandoulabs">wandoulabs</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-
-
-  </body>
+    </body>
 </html>
